@@ -51,9 +51,10 @@ namespace BEB_csharp05
             {
                 NativeMethods Ini;
                 Ini = new NativeMethods(Var.IniPath);
+                bool _GlobalLoggingAllowed;
 
                 bool _TryParseSucessfull;
-                _TryParseSucessfull = bool.TryParse(Ini["Allgemein"]["GlobalLoggingAllowed"], out bool _GlobalLoggingAllowed);
+                _TryParseSucessfull = bool.TryParse(Ini["Allgemein"]["GlobalLoggingAllowed"], out _GlobalLoggingAllowed);
                 if (_TryParseSucessfull)
                 {
                     Var.GlobalLoggingAllowed = _GlobalLoggingAllowed;

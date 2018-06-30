@@ -212,15 +212,15 @@ namespace BEB_csharp05
                     if (!char.IsNumber(items[0].ToCharArray()[0])) continue;
 
                     string zeit = "20" + items[0].Replace('/', '-') + " " + items[1];
-                    int annahme = 0;
-                    int feststoff = 0;
+                    int annahme = 0, annahme1 = 0, annahme2 = 0;
+                    int feststoff = 0, feststoff1 = 0, feststoff2 = 0;
 
-                    if (int.TryParse(items[2], out int annahme1)) annahme += annahme1;
-                    if (int.TryParse(items[3], out int annahme2)) annahme += annahme2;
+                    if (int.TryParse(items[2], out annahme1)) annahme += annahme1;
+                    if (int.TryParse(items[3], out annahme2)) annahme += annahme2;
                     //if (int.TryParse(items[6], out annahme3)) annahme += annahme3;  // Gülle in Nachgärer gepumpt.
 
-                    if (int.TryParse(items[4], out int feststoff1)) feststoff += feststoff1;
-                    if (int.TryParse(items[5], out int feststoff2)) feststoff += feststoff2;
+                    if (int.TryParse(items[4], out feststoff1)) feststoff += feststoff1;
+                    if (int.TryParse(items[5], out feststoff2)) feststoff += feststoff2;
 
                     Dictionary<string, string> data = new Dictionary<string, string>
                         {

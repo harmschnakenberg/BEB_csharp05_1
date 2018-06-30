@@ -311,6 +311,8 @@ namespace BEB_csharp05
         {
             try
             {
+
+                System.Threading.Thread.Sleep(Var.SleepingMilliSec);
                 /* Create an FTP Request */
                 //ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + directory);
                 IO.Log(2018062803, "Liste FTP-Ordner " + Path.Combine(host, directory) + @"/");
@@ -339,6 +341,8 @@ namespace BEB_csharp05
                 ftpStream.Close();
                 ftpResponse.Close();
                 ftpRequest = null;
+
+                System.Threading.Thread.Sleep(Var.SleepingMilliSec);
                 /* Return the Directory Listing as a string Array by Parsing 'directoryRaw' with the Delimiter you Append (I use | in This Example) */
                 try { string[] directoryList = directoryRaw.Split("|".ToCharArray()); return directoryList; }
                 catch (Exception ex) { IO.Log(2018061809, "ftp, directoryListSimple  | " + ex.ToString()); }
@@ -346,6 +350,7 @@ namespace BEB_csharp05
             catch (Exception ex) { IO.Log(2018061810, "ftp, directoryListSimple  | " + ex.ToString()); }
             /* Return an Empty string Array if an Exception Occurs */
             return new string[] { "" };
+           
         }
 
         /* List Directory Contents in Detail (Name, Size, Created, etc.) */
@@ -433,6 +438,8 @@ namespace BEB_csharp05
                 int totalBytes = 0;
                 long fileSize = 0;
 
+                Thread.Sleep(Var.SleepingMilliSec);
+
                 FtpWebRequest requestS = (FtpWebRequest)WebRequest.Create(ftpSite);
                 requestS.Credentials = new NetworkCredential(Var.FtpUsername1, Var.FtpPassword1);
                 requestS.Method = WebRequestMethods.Ftp.GetFileSize;
@@ -441,6 +448,8 @@ namespace BEB_csharp05
                 {
                     fileSize = response.ContentLength;
                     response.Close();
+
+                    Thread.Sleep(Var.SleepingMilliSec);
                 }
 
                 FtpWebRequest request = (FtpWebRequest)WebRequest.Create(ftpSite);

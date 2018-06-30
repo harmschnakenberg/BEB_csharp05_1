@@ -42,3 +42,8 @@ Parametername: path
 30.06.2018 14:58 2018062209	Anwendung wurde gestartet.
 30.06.2018 15:02 2018062004	INI-Datei wurde geladen.
 30.06.2018 15:02 2018062209	Anwendung wurde gestartet.
+30.06.2018 17:15 2018062004	INI-Datei wurde geladen.
+30.06.2018 17:15 2018062209	Anwendung wurde gestartet.
+30.06.2018 17:15 2018062101	GetDataTable System.Data.SQLite.SQLiteException | SELECT 'Summe' AS Zeit, SUM(Annahme) AS Annahme, SUM(Feststoff) AS Feststoff, ROUND( CAST(SUM(Annahme) AS FLOAT)* 100.0  / ( SUM(Annahme) + SUM(Feststoff) ), 1) || '%' AS Gülleanteil FROM Input WHERE Zeit BETWEEN '2018-06-01 17:15:48' AND '2018-07-01 00:00:00' UNION  SELECT Min(Zeit) AS Zeit, SUM(Annahme) AS Annahme, SUM(Feststoff) AS Feststoff, ROUND( CAST(SUM(Annahme) AS FLOAT)* 100.0  / ( SUM(Annahme) + SUM(Feststoff) ), 1) || '%' AS Gülleanteil FROM Input WHERE Zeit BETWEEN '2018-06-01 17:15:48' AND '2018-07-01 00:00:00'  GROUP BY strftime('%Y', Zeit), strftime('%m', Zeit), strftime('%d', Zeit) ORDER BY Zeit | unable to open database file
+30.06.2018 17:36 2018062004	INI-Datei wurde geladen.
+30.06.2018 17:36 2018062209	Anwendung wurde gestartet.

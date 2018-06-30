@@ -204,3 +204,17 @@ UNIQUE constraint failed: Scales.LfdNr |
 30.06.2018 14:47 2018062209	Anwendung wurde gestartet.
 30.06.2018 14:52 2018062004	INI-Datei wurde geladen.
 30.06.2018 14:52 2018062209	Anwendung wurde gestartet.
+30.06.2018 17:09 2018062004	INI-Datei wurde geladen.
+30.06.2018 17:10 2018062209	Anwendung wurde gestartet.
+30.06.2018 17:10 2018062905	Aktualisierung von Ftp/Datei/Datenbank (Letzte Prüfung: 30.06.2018 17:10:20)
+30.06.2018 17:10 2018062803	Liste FTP-Ordner ftp://fritz.nas/General-UDisk-01/SAMP04/
+30.06.2018 17:11 2018061810	ftp, directoryListSimple  | System.Net.WebException: Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.FtpWebRequest.GetResponse()
+   bei BEB_csharp05.Ftp.DirectoryListSimple(String directory) in C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\Ftp.cs:Zeile 327.
+30.06.2018 17:11 2018062803	Liste FTP-Ordner ftp://fritz.nas/General-UDisk-01/SAMP03/
+30.06.2018 17:11 2018062004	INI-Datei wurde geladen.
+30.06.2018 17:11 2018062209	Anwendung wurde gestartet.
+30.06.2018 17:15 2018062004	INI-Datei wurde geladen.
+30.06.2018 17:15 2018062209	Anwendung wurde gestartet.
+30.06.2018 17:36 2018062004	INI-Datei wurde geladen.
+30.06.2018 17:36 2018062209	Anwendung wurde gestartet.

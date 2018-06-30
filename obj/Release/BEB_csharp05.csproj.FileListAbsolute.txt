@@ -24,3 +24,26 @@ C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.cs
 C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.csproj.CopyComplete
 C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.exe
 C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.pdb
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\BEB_csharp05.exe.config
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\BEB_csharp05.exe
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\BEB_csharp05.pdb
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\EntityFramework.dll
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\EPPlus.dll
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\System.Data.SQLite.dll
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\EntityFramework.xml
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\EPPlus.xml
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\bin\Release\System.Data.SQLite.xml
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\MainWindow.g.cs
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\App.g.cs
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05_MarkupCompile.cache
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05_MarkupCompile.lref
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\MainWindow.baml
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.g.resources
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.Properties.Resources.resources
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.csproj.GenerateResource.Cache
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.exe
+C:\Users\Harm\Documents\Visual Studio 2015\Projects\projekt\BEB_csharp05\BEB_csharp05\obj\Release\BEB_csharp05.pdb
