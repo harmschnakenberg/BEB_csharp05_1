@@ -1,0 +1,296 @@
+﻿<Window x:Class="BEB_csharp05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BEB_csharp05"
+        mc:Ignorable="d"
+                          
+
+    Title="Bioenergie Bassen GmbH &amp; Co. KG" Height="600" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="myListboxStyle">
+            <Style.Resources>
+                <!-- Background of selected item when focussed -->
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+                <!-- Background of selected item when not focussed -->
+                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Green" />
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="INI">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="0" Grid.Row="0" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="1" Grid.Row="1" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="2" Grid.Row="2" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="3" Grid.Row="3" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="4" Grid.Row="4" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="5" Grid.Row="5" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="6" Grid.Row="6" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="7" Grid.Row="7" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="8" Grid.Row="8" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="9" Grid.Row="9" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="10" Grid.Row="10" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="11" Grid.Row="11" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="12" Grid.Row="12" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="13" Grid.Row="13" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="14" Grid.Row="14" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="15" Grid.Row="15" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="16" Grid.Row="16" Grid.Column="0" Margin="5"/>
+                    <TextBlock Text="17" Grid.Row="17" Grid.Column="0" Margin="5"/>
+
+                    <Button x:Name="Button_ReadIni" Grid.Row="0" Grid.Column="2" Content="INI einlesen" Click="Button_ReadIni_Click" />
+                    <Button x:Name="Button_CheckFtpDir" Grid.Row="0" Grid.Column="3" Content="Check" Click="Button_CheckFtpDir_Click" />
+
+                    <TextBlock Text="Programmordner:" Grid.Row="1" Grid.Column="1"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" x:Name="TextBlock_AppDir" Text="{Binding Path=AppDir, Mode=oneWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <TextBlock Text="INI-Pfad:" Grid.Row="2" Grid.Column="1"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" x:Name="TextBlock_IniPath" Text="{Binding Path=IniPath, Mode=oneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_IniPath" Grid.Row="2" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="DB-Pfad:" Grid.Row="3" Grid.Column="1"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" x:Name="TextBlock_DbPath" Text="{Binding Path=DbPath, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_DbPath" Grid.Row="3" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="Lokaler Input Ordner" Grid.Row="5" Grid.Column="1"/>
+                    <TextBlock Grid.Row="5" Grid.Column="2" x:Name="TextBlock_LocDirInput" Text="{Binding Path=LocDirInput, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_LocDirInput" Grid.Row="5" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="Lokaler Operation Ordner" Grid.Row="6" Grid.Column="1"/>
+                    <TextBlock Grid.Row="6" Grid.Column="2" x:Name="TextBlock_LocDirOperation" Text="{Binding Path=LocDirOperation, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_LocDirOperation" Grid.Row="6" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="Lokaler Scales Ordner" Grid.Row="7" Grid.Column="1"/>
+                    <TextBlock Grid.Row="7" Grid.Column="2" x:Name="TextBlock_LocDirScales" Text="{Binding Path=LocDirScales, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_LocDirScales" Grid.Row="7" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="Lokaler Excel Ordner" Grid.Row="8" Grid.Column="1"/>
+                    <TextBlock Grid.Row="8" Grid.Column="2" x:Name="TextBlock_LocDirExcel" Text="{Binding Path=LocDirExcel, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_LocDirExcel" Grid.Row="8" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="FTP Input Ordner" Grid.Row="10" Grid.Column="1"/>
+                    <TextBlock Grid.Row="10" Grid.Column="2" x:Name="TextBlock_FtpDirInput" Text="{Binding Path=FtpDirInput, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_FtpDirInput" Grid.Row="10" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="FTP Operation Ordner" Grid.Row="11" Grid.Column="1"/>
+                    <TextBlock Grid.Row="11" Grid.Column="2" x:Name="TextBlock_FtpDirOperation" Text="{Binding Path=FtpDirOperation, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_FtpDirOperation" Grid.Row="11" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <TextBlock Text="FTP Scales Ordner" Grid.Row="12" Grid.Column="1"/>
+                    <TextBlock Grid.Row="12" Grid.Column="2" x:Name="TextBlock_FtpDirScales" Text="{Binding Path=FtpDirScales, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_FtpDirScales" Grid.Row="12" Grid.Column ="3" Width="10" Height="10" Fill="Orange"/>
+
+                    <!--<TextBlock Content="FTP-Stammordner:" Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <TextBlock Grid.Row="12" Grid.Column="2" x:Name="TextBlock_FtpRootDir" Text="{Binding Path=FtpRootDir, Mode=oneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_FtpRootDir" Grid.Row="12" Grid.Column ="3" Width="10" Height="10" Fill="Orange" Margin="0,8,0,9"/>
+
+                    <TextBlock Content="FTP-Ordner Operation:" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" x:Name="TextBlock_FtpFolderOperation" Text="{Binding Path=FtpFolderOperation, Mode=oneWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <TextBlock Content="FTP-Ordner Input:" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <TextBlock Grid.Row="4" Grid.Column="2" x:Name="TextBlock_FtpFolderInput" Text="{Binding Path=FtpFolderInput, Mode=oneWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <TextBlock Content="Ini-Pfad:" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <TextBlock Grid.Row="7" Grid.Column="2" x:Name="TextBlock_IniPath" Text="{Binding Path=IniPath, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Ellipse x:Name="status_IniPath" Grid.Row="2" Grid.Column ="3" Width="10" Height="10" Fill="Orange" Margin="0,8,0,9"/>
+
+                    <TextBlock Content="Now:" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <TextBlock Grid.Row="8" Grid.Column="2" x:Name="textBlock_TimeNow" Text="00:00:00"/>
+                    <TextBlock Grid.Row="8" Grid.Column="3" x:Name="textBlock_AutoReadFtpStartTime" Text="{Binding Path=AutoReadFtpStartTime, Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+
+                   
+
+                    <TextBlock Content="Progress:" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <ProgressBar Grid.Row="10" Grid.Column="2" x:Name="progressbar1" Height="5" Maximum="100" Value="{Binding Path=Progress, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,11"/>-->
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="FTP">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ProgressBar x:Name="Progressbar1" Grid.Row="0" Grid.ColumnSpan="4" Height="20" Maximum="100" Value="{Binding Path=TaskProgress1, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <ProgressBar x:Name="Progressbar2" Grid.Row="1" Grid.ColumnSpan="4" Height="20" Maximum="100" Value="{Binding Path=TaskProgress2, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <StackPanel Grid.Row="2">
+                        <Button Content="Abbrechen" Click="CancelButton_Click" Grid.ColumnSpan="3" IsEnabled="False"/>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Text="Aktualisierung alle " VerticalAlignment="Center"/>
+                            <TextBox   Text="{Binding Path=HourTimePeriodForNewFtpUpdate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBlock Text=" Stunden." VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Text="Nächste Aktualisierung: " VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding Path=StartTimeFtpAutoRead, Mode=OneWay, StringFormat='{}{0:dd.MM.yyyy HH:mm:ss}', UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <ComboBox x:Name="ComboBox_ListToShow"  Width="200">
+                                <ComboBoxItem IsSelected="True">Input lokal</ComboBoxItem>
+                                <ComboBoxItem>Input FTP</ComboBoxItem>
+                                <ComboBoxItem>Operation lokal</ComboBoxItem>
+                                <ComboBoxItem>Operation FTP</ComboBoxItem>
+                            </ComboBox>
+                            <Button Content="auflisten" Click="Button_ListFilesFromFolder_Click" />
+                        </StackPanel>
+
+                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Label>Max. Anzahl zu ladender Dateien:</Label>
+                            <TextBox Text="{Binding Path=MaxFilesCount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="50"/>
+                        </StackPanel>
+
+                        <Button Content="FTP Input" Click="Button_Click_LoadFtpInput" Grid.ColumnSpan="3"/>
+                        <Button Content="DIR Input" Click="Button_Click_LoadDirInput" Grid.ColumnSpan="3"/>
+
+                        <Button Content="FTP Operation" Click="Button_Click_LoadFtpOperation" />
+                        <Button Content="DIR Operation" Click="Button_Click_LoadDirOperation" />
+
+                        <TextBlock Text="FTP Scales (nicht vorhanden)" TextAlignment="Center"/>
+                        <Button Content="DIR Scales" Click="Button_Click_LoadDirScales" />
+
+                    </StackPanel>
+
+                    <ListBox x:Name="ListView1" 
+                              Style="{StaticResource myListboxStyle}"
+                              Grid.Row="2" 
+                              Grid.Column="3" 
+                              Grid.RowSpan="6" 
+                              ItemsSource="{Binding Path=ListView1Content, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                              />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tabelle" GotFocus="Tab_Tabelle_GotFocus">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <DataGrid x:Name="datagrid1" 
+                              Grid.Column="1" 
+                              ItemsSource="{Binding Path=MyDataTable, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                              ColumnWidth="100" 
+                              TextBlock.TextAlignment="Right" 
+                              IsReadOnly="True"
+                              CanUserSortColumns="True"
+                              CanUserResizeColumns="True"
+                              CanUserReorderColumns="True"
+                              />
+
+                    <StackPanel  VerticalAlignment="Top">
+                        <Image Source="Resources/beb_logo.png" Stretch="Uniform" Width="150" Margin="0,0,0,10" ToolTip="Bioenergie Bassen GmbH &amp; Co. KG " />
+                        
+                        <TextBlock Text="Tabelle:" VerticalAlignment="Bottom"/>
+                        <ComboBox x:Name="comboBox_Table" SelectionChanged="ComboBox_Table_SelectionChanged" Margin="0,0,0,10">
+                            <ComboBoxItem IsSelected="True" >Futter</ComboBoxItem>
+                            <ComboBoxItem>Betrieb</ComboBoxItem>
+                            <ComboBoxItem>Waage</ComboBoxItem>
+                        </ComboBox>
+
+                        <TextBlock Text="Gruppierung:" VerticalAlignment="Bottom"/>
+                        <ComboBox x:Name="comboBox_Group" SelectionChanged="ComboBox_Group_SelectionChanged" Margin="0,0,0,10">
+                            <ComboBoxItem>Alles</ComboBoxItem>
+                            <ComboBoxItem>Stunden</ComboBoxItem>
+                            <ComboBoxItem IsSelected="True">Tage</ComboBoxItem>
+                            <ComboBoxItem>Monate</ComboBoxItem>
+                            <ComboBoxItem>Jahre</ComboBoxItem>
+                        </ComboBox>
+
+                        <StackPanel Visibility="{Binding Path=ControlVisibility, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+                        <TextBlock Text="Sorte:" VerticalAlignment="Bottom"/>
+                            <ComboBox x:Name="comboBox_Sorte" SelectionChanged="ComboBox_Sorte_SelectionChanged" Margin="0,0,0,10" IsEnabled="False">
+                                <ComboBoxItem>Alles</ComboBoxItem>
+                                <ComboBoxItem>Gärrest</ComboBoxItem>
+                                <ComboBoxItem IsSelected="True">Gülle</ComboBoxItem>
+                                <ComboBoxItem>Rindergülle</ComboBoxItem>
+                                <ComboBoxItem>Schweinegülle</ComboBoxItem>
+                                <ComboBoxItem>Mais</ComboBoxItem>
+                            </ComboBox>
+
+                            <TextBlock Text="Kunde:" VerticalAlignment="Bottom"/>
+                            <ComboBox x:Name="comboBox_Kunde" SelectionChanged="ComboBox_Kunde_SelectionChanged" Margin="0,0,0,10" IsEnabled="False">
+                                <ComboBoxItem IsSelected="True">Alle</ComboBoxItem>
+                            </ComboBox>
+
+                        </StackPanel>
+
+                        <TextBlock Text="von:" VerticalAlignment="Bottom"/>
+                        <DatePicker x:Name="datePickerVon"
+                        SelectedDateChanged="DatePickerVon_SelectedDateChanged"
+                        IsTodayHighlighted="True"
+                        SelectedDate="{Binding Path=FirstDayofCurrentMonth, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                        Margin="0,0,0,10"/>
+                        <ComboBox x:Name="comboBox_EndDatePattern" SelectionChanged="DatePickerVon_SelectedDateChanged">
+                            <ComboBoxItem >bis:</ComboBoxItem>
+                            <ComboBoxItem >1 Tag</ComboBoxItem>
+                            <ComboBoxItem IsSelected="True">1 Monat</ComboBoxItem>
+                            <ComboBoxItem >1 Jahr</ComboBoxItem>
+                        </ComboBox>
+                        <DatePicker x:Name="datePickerBis"
+                        SelectedDateChanged="DatePickerBis_SelectedDateChanged"
+                        IsTodayHighlighted="True"
+                        IsEnabled="false"
+                        Margin="0,0,0,10"/>
+
+                        <Expander  x:Name="SqlExpander1"  Header="SQL" VerticalAlignment="Bottom" FontSize="9">
+                            <TextBox x:Name="textBox_SQL" TextWrapping="Wrap" Text="{Binding Path=SqlCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontSize="10" MaxWidth="150"/>
+                        </Expander>
+                        <Button x:Name="button_TableToExcel" Content="in Excel speichern"  Click="Button_tableToExcel_Click"/>
+
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="LOG" GotFocus="Tab_Log_GotFocus">
+                <TextBox Text="{Binding Path=CurrentLogFileContent, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

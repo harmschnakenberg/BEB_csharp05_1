@@ -1,0 +1,25 @@
+29.06.2018 16:18 2018062004	INI-Datei wurde geladen.
+29.06.2018 16:18 2018062209	Anwendung wurde gestartet.
+29.06.2018 16:18 2018062206	Datei 'C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Debug\Konfig\Scales.archiv' existiert nicht.
+29.06.2018 16:21 2018062905	Aktualisierung von Ftp/Datei/Datenbank (Letzte Prüfung: 29.06.2018 16:19:36)
+29.06.2018 16:21 2018062803	Liste FTP-Ordner ftp://fritz.nas/General-UDisk-01/SAMP04/
+29.06.2018 16:25 2018062104	System.Data.SQLite.SQLiteException | constraint failed
+NOT NULL constraint failed: Scales.Datei | 
+29.06.2018 16:25 2018062908	Die Zeile 1 aus Datei 'C:\Users\Harm\Downloads\Scales\06.04.2016_17.11.03_00006506.csv' konnte nicht in die Datenbank übernommen werden.
+29.06.2018 16:25 2018062803	Liste FTP-Ordner ftp://fritz.nas/General-UDisk-01/SAMP03/
+29.06.2018 16:25 2018062104	System.Data.SQLite.SQLiteException | constraint failed
+NOT NULL constraint failed: Scales.Datei | 
+29.06.2018 16:25 2018062908	Die Zeile 1 aus Datei 'C:\Users\Harm\Downloads\Scales\06.04.2016_17.11.03_00006507.csv' konnte nicht in die Datenbank übernommen werden.
+29.06.2018 16:25 2018062104	System.Data.SQLite.SQLiteException | constraint failed
+NOT NULL constraint failed: Scales.Datei | 
+29.06.2018 16:25 2018062908	Die Zeile 1 aus Datei 'C:\Users\Harm\Downloads\Scales\06.04.2016_17.11.03_00006508.csv' konnte nicht in die Datenbank übernommen werden.
+29.06.2018 16:25 2018062206	Datei 'C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Debug\Konfig\Scales.archiv' existiert nicht.
+29.06.2018 16:25 2018062104	System.Data.SQLite.SQLiteException | constraint failed
+NOT NULL constraint failed: Scales.Datei | 
+29.06.2018 16:25 2018062908	Die Zeile 1 aus Datei 'C:\Users\Harm\Downloads\Scales\06.04.2016_17.11.03_00006506.csv' konnte nicht in die Datenbank übernommen werden.
+29.06.2018 16:25 2018062104	System.Data.SQLite.SQLiteException | constraint failed
+NOT NULL constraint failed: Scales.Datei | 
+29.06.2018 16:25 2018062908	Die Zeile 1 aus Datei 'C:\Users\Harm\Downloads\Scales\06.04.2016_17.11.03_00006507.csv' konnte nicht in die Datenbank übernommen werden.
+29.06.2018 16:25 2018062104	System.Data.SQLite.SQLiteException | constraint failed
+NOT NULL constraint failed: Scales.Datei | 
+29.06.2018 16:25 2018062908	Die Zeile 1 aus Datei 'C:\Users\Harm\Downloads\Scales\06.04.2016_17.11.03_00006508.csv' konnte nicht in die Datenbank übernommen werden.

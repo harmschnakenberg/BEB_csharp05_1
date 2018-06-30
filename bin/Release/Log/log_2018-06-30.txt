@@ -1,0 +1,44 @@
+30.06.2018 14:51 2018062005	INI wurde nicht geladen. Die Eingabezeichenfolge hat das falsche Format. |  | mscorlib | System.FormatException: Die Eingabezeichenfolge hat das falsche Format.
+   bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.Convert.ToInt16(String value)
+   bei BEB_csharp05.MainWindow.ReadFromIni(String iniPath) in C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\Start.cs:Zeile 75.
+30.06.2018 14:51 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:51 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:51 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:51 2018062209	Anwendung wurde gestartet.
+30.06.2018 14:52 2018062005	INI wurde nicht geladen. Die Eingabezeichenfolge hat das falsche Format. |  | mscorlib | System.FormatException: Die Eingabezeichenfolge hat das falsche Format.
+   bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.Convert.ToInt16(String value)
+   bei BEB_csharp05.MainWindow.ReadFromIni(String iniPath) in C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\Start.cs:Zeile 75.
+30.06.2018 14:52 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:52 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:52 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:52 2018062209	Anwendung wurde gestartet.
+30.06.2018 14:54 2018062005	INI wurde nicht geladen. Die Eingabezeichenfolge hat das falsche Format. |  | mscorlib | System.FormatException: Die Eingabezeichenfolge hat das falsche Format.
+   bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   bei BEB_csharp05.MainWindow.ReadFromIni(String iniPath) in C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\Start.cs:Zeile 75.
+30.06.2018 14:54 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:54 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:54 2018062506	Ordner <> konnte nicht mit Schreibrechten erstellt werden. | Der Wert darf nicht NULL sein.
+Parametername: path
+30.06.2018 14:54 2018062209	Anwendung wurde gestartet.
+30.06.2018 14:56 2018062004	INI-Datei wurde geladen.
+30.06.2018 14:56 2018062209	Anwendung wurde gestartet.
+30.06.2018 14:58 2018062004	INI-Datei wurde geladen.
+30.06.2018 14:58 2018062209	Anwendung wurde gestartet.
+30.06.2018 15:02 2018062004	INI-Datei wurde geladen.
+30.06.2018 15:02 2018062209	Anwendung wurde gestartet.

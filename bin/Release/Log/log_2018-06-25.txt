@@ -1,0 +1,9 @@
+25.06.2018 15:22 2018062004	INI-Datei wurde geladen.
+25.06.2018 15:22 2018062209	Anwendung wurde gestartet.
+25.06.2018 15:23 2018062004	INI-Datei wurde geladen.
+25.06.2018 15:24 2018061904	Starte Download von ftp://fritz.nas/General-UDisk-01/SAMP04/SA00001.csv nach C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Release\Data\Input
+25.06.2018 15:24 2018062005	System.UnauthorizedAccessException | Der Zugriff auf den Pfad "C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Release\Data\Input" wurde verweigert.
+25.06.2018 15:24 2018061904	Starte Download von ftp://fritz.nas/General-UDisk-01/SAMP04/SA00002.csv nach C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Release\Data\Input
+25.06.2018 15:24 2018062005	System.UnauthorizedAccessException | Der Zugriff auf den Pfad "C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Release\Data\Input" wurde verweigert.
+25.06.2018 15:24 2018061904	Starte Download von ftp://fritz.nas/General-UDisk-01/SAMP04/SA00003.csv nach C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Release\Data\Input
+25.06.2018 15:24 2018062005	System.UnauthorizedAccessException | Der Zugriff auf den Pfad "C:\Users\Harm\source\repos\BEB_csharp05\BEB_csharp05\bin\Release\Data\Input" wurde verweigert.
